@@ -1,65 +1,222 @@
+// "use client";
+
+// import Navbar from "@/components/ui/navbar";
+// import Image from "next/image";
+
+// export default function Home() {
+//   return (
+//     <>
+//       <Navbar />
+
+//       <section className="relative w-full mx-auto h-screen bg-[#F2F0F1] overflow-hidden">
+//         {/* Background Image */}
+//         <div className="absolute right-0 top-0 w-[50%] h-full min-w-screen z-0">
+//           <Image
+//             src="/svgs/landingimg.png"
+//             alt="Hero Image"
+//             fill
+//             className="object-cover object-top"
+//             priority
+//           />
+//         </div>
+
+//         {/* Content Container */}
+//         <div className="relative z-10 pt-20 pl-20">
+//           {/* FIND CLOTHES THAT MATCHES YOUR STYLE */}
+//           <h1
+//             className="text-black font-bold text-6xl leading-[64px] w-[577px] m-0"
+//             style={{ fontFamily: "'Integral CF', sans-serif" }}
+//           >
+//             FIND CLOTHES THAT MATCHES YOUR STYLE
+//           </h1>
+
+//           {/* Description */}
+//           <p
+//             className="text-black/60 font-normal text-[16px] leading-[22px] w-[545px] mt-[32px]"
+//             style={{ fontFamily: "'Satoshi', sans-serif" }}
+//           >
+//             Browse through our diverse range of meticulously crafted garments,
+//             designed to bring out your individuality and cater to your sense of
+//             style.
+//           </p>
+
+//           {/* Shop Now Button */}
+//           <button
+//             className="flex flex-row justify-center items-center px-[54px] py-[16px] gap-[12px] bg-black rounded-[62px] w-[210px] h-[52px] mt-[32px] text-white font-medium text-[16px] leading-[22px] hover:bg-gray-800 transition"
+//             style={{ fontFamily: "'Satoshi', sans-serif" }}
+//           >
+//             Shop Now
+//           </button>
+
+//           {/* Stats Section (Frame 57) */}
+//           <div className="flex flex-row items-center gap-[32px] w-[596px] h-[74px] mt-[48px]">
+//             {/* Stat 1 */}
+//             <div className="flex flex-col items-start w-[141px]">
+//               <div
+//                 className="text-black font-bold text-[40px] leading-[54px] -my-[2px]"
+//                 style={{ fontFamily: "'Satoshi', sans-serif" }}
+//               >
+//                 200+
+//               </div>
+//               <div
+//                 className="text-black/60 font-normal text-[16px] leading-[22px]"
+//                 style={{ fontFamily: "'Satoshi', sans-serif" }}
+//               >
+//                 International Brands
+//               </div>
+//             </div>
+
+//             {/* Separator 1 */}
+//             <div className="w-[1px] h-[74px] bg-black/10"></div>
+
+//             {/* Stat 2 */}
+//             <div className="flex flex-col items-start w-[156px]">
+//               <div
+//                 className="text-black font-bold text-[40px] leading-[54px] -my-[2px]"
+//                 style={{ fontFamily: "'Satoshi', sans-serif" }}
+//               >
+//                 2,000+
+//               </div>
+//               <div
+//                 className="text-black/60 font-normal text-[16px] leading-[22px]"
+//                 style={{ fontFamily: "'Satoshi', sans-serif" }}
+//               >
+//                 High-Quality Products
+//               </div>
+//             </div>
+
+//             {/* Separator 2 */}
+//             <div className="w-[1px] h-[74px] bg-black/10"></div>
+
+//             {/* Stat 3 */}
+//             <div className="flex flex-col items-start w-[171px]">
+//               <div
+//                 className="text-black font-bold text-[40px] leading-[54px] -my-[2px]"
+//                 style={{ fontFamily: "'Satoshi', sans-serif" }}
+//               >
+//                 30,000+
+//               </div>
+//               <div
+//                 className="text-black/60 font-normal text-[16px] leading-[22px]"
+//                 style={{ fontFamily: "'Satoshi', sans-serif" }}
+//               >
+//                 Happy Customers
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+//     </>
+//   );
+// }
+
+
+
+
+
+
+
+
+"use client";
+
+import Navbar from "@/components/ui/navbar";
 import Image from "next/image";
+
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <Navbar />
+
+      <section className="relative w-full min-h-screen bg-[#F2F0F1] overflow-hidden">
+
+        {/* DESKTOP IMAGE (right side background) */}
+        <div className="absolute right-0 top-0 w-screen h-full z-0 hidden md:block">
+          <Image
+            src="/svgs/landingimg.png"
+            alt="Hero"
+            fill
+            className="object-cover object-top"
+            priority
+          />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+
+        {/* CONTENT */}
+        <div className="relative z-10 max-w-6xl mx-auto px-6 pt-16 md:pt-24">
+
+          <div className="max-w-xl space-y-6">
+
+            {/* HEADING */}
+            <h1
+              className="text-4xl md:text-6xl font-bold leading-tight"
+              style={{ fontFamily: "'Integral CF', sans-serif" }}
+            >
+              FIND CLOTHES THAT MATCHES YOUR STYLE
+            </h1>
+
+            {/* DESCRIPTION */}
+            <p
+              className="text-black/60 text-base leading-relaxed"
+              style={{ fontFamily: "'Satoshi', sans-serif" }}
+            >
+              Browse through our diverse range of meticulously crafted garments,
+              designed <br /> to bring out your individuality and cater to your sense
+              of style.
+            </p>
+
+            {/* BUTTON */}
+            <button
+              className="bg-black text-sm w-52 text-white py-4 rounded-full hover:bg-gray-800 transition"
+              style={{ fontFamily: "'Satoshi', sans-serif" }}
+            >
+              Shop Now
+            </button>
+
+            {/* STATS */}
+            <div className="flex flex-wrap items-center gap-6 pt-6">
+
+              <div>
+                <p className="text-3xl md:text-4xl font-bold">200+</p>
+                <p className="text-black/60 text-sm">
+                  International Brands
+                </p>
+              </div>
+
+              <div className="hidden md:block w-0.5 h-12 bg-black/10" />
+
+              <div>
+                <p className="text-3xl md:text-4xl font-bold">2,000+</p>
+                <p className="text-black/60 text-sm">
+                  High-Quality Products
+                </p>
+              </div>
+
+              <div className="hidden md:block w-0.5 h-12 bg-black/10" />
+
+              <div>
+                <p className="text-3xl md:text-4xl font-bold">30,000+</p>
+                <p className="text-black/60 text-sm">
+                  Happy Customers
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          {/* MOBILE IMAGE (shown only on small screens) */}
+          <div className="mt-10 md:hidden">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src="/svgs/mobileimg.png"
+              alt="Mobile Hero"
+              width={500}
+              height={500}
+              className="w-full object-contain"
+              priority
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </div>
+
         </div>
-      </main>
-    </div>
+      </section>
+    </>
   );
 }
