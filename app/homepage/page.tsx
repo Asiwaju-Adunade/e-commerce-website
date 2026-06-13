@@ -38,12 +38,17 @@ export default function Home() {
           <div className="max-w-xl p-4 md:py-20">
 
             {/* HEADING */}
-            <h1
-              className="text-[36px] md:text-6xl font-bold leading-tight mb-3 font-heading"
+            {/* <h1
+              className="text-3xl max-w-[60%] md:text-6xl font-bold leading-tight mb-3 font-heading"
             >
               FIND CLOTHES <br /> THAT MATCHES <br /> YOUR STYLE
-            </h1>
+            </h1> */}
 
+            <h1 className="text-3xl md:text-6xl font-bold leading-tight mb-3 font-heading text-center md:text-left max-w-3xl">
+              FIND CLOTHES 
+              THAT MATCH YOUR STYLE
+            </h1>
+            
           <div className="space-y-6">
             {/* DESCRIPTION */}
             <p
@@ -128,13 +133,13 @@ export default function Home() {
       </section>
 
       {/* Men Products Section */}
-      <section className="py-10 max-w-[1240px] mx-auto px-4 md:px-6">
+      <section className="max-w-[1240px] mx-auto px-4 md:px-6">
         <h1 className="text-center text-3xl md:text-4xl font-heading font-bold uppercase tracking-wider">MEN COLLECTION</h1>
         
         {loading ? (
-            <div className="flex justify-center my-20">Loading products...</div>
+            <div className="flex justify-center">Loading products...</div>
         ) : (
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
                 {products.slice(0, 8).map((product) => (
                     <ProductCard key={product.id} product={product} />
                 ))}

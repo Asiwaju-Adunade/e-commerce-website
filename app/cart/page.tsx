@@ -119,8 +119,8 @@ export default function Page() {
            )}
          </div>
           
-          {/* second card items */}
-          <div className="border-gray-200 border space-y-3 w-85 h-96 py-5 p-3 ml-5 md:ml-0 rounded-2xl">
+          {/* order summary cart items */}
+          <div className="border-gray-200 border space-y-3 w-85 h-96 py-5 p-3 mr-3 md:mr-0 rounded-2xl">
             {/* summary card */}
              <h1 className="font-bold"> Order Summary</h1>
             <div className="flex justify-between ">

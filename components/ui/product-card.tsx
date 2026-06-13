@@ -27,7 +27,7 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <Card className="flex flex-col h-full group overflow-hidden border-transparent hover:border-gray-200 transition-all duration-300">
       <CardContent className="p-4 flex flex-col flex-grow">
-        <div className="relative aspect-square w-full bg-[#F0EEED] rounded-xl overflow-hidden mb-4">
+        <div className="relative aspect-square w-full bg-[#F0EEED] rounded-xl overflow-hidden">
           <Image
             src={product.image}
             alt={product.title}
