@@ -1,15 +1,78 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+import { CartProvider } from "@/context/CartContext";
+import Navbar from "@/components/ui/navbar";
+import Footer from "@/components/ui/footer";
+import { Toaster } from "sonner";
 
-const geistSans = Geist({
-  variable: "--font-integral_cf",
-  subsets: ["latin"],
+const integralCF = localFont({
+  src: [
+    {
+      path: "../Integral-CF-Font-/Fontspring-DEMO-integralcf-regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../Integral-CF-Font-/Fontspring-DEMO-integralcf-medium.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../Integral-CF-Font-/Fontspring-DEMO-integralcf-demibold.otf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../Integral-CF-Font-/Fontspring-DEMO-integralcf-bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../Integral-CF-Font-/Fontspring-DEMO-integralcf-extrabold.otf",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "../Integral-CF-Font-/Fontspring-DEMO-integralcf-heavy.otf",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+  variable: "--font-integral-cf",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
+const satoshi = localFont({
+  src: [
+    {
+      path: "../satoshi-font/Satoshi-Light.woff",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../satoshi-font/Satoshi-Regular.woff",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../satoshi-font/Satoshi-Medium.woff",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../satoshi-font/Satoshi-Bold.woff",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../satoshi-font/Satoshi-Black.woff",
+      weight: "900",
+      style: "normal",
+    },
+  ],
   variable: "--font-satoshi",
-  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -25,9 +88,18 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${integralCF.variable} ${satoshi.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+        <CartProvider>
+          <Navbar />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
+        </CartProvider>
+        <Toaster position="top-center" richColors />
+      </body>
     </html>
   );
 }
