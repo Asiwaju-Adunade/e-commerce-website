@@ -60,7 +60,7 @@ export default function Page() {
         <>
         {/* new arrivals section */}
         <section>
-            <h1 className="text-center text-3xl md:text-4xl font-heading my-5 font-bold uppercase tracking-wider">NEW ARRIVALS</h1>
+            <h1 className="text-center text-3xl md:text-4xl font-heading my-5 font-bold mt-2 uppercase tracking-wider">NEW ARRIVALS</h1>
             
             {loading ? (
                 <div className="flex justify-center my-10">Loading products...</div>

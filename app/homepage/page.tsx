@@ -37,7 +37,7 @@ export default function Home() {
         <div className="relative z-10  max-w-[1240px] mx-auto px-6 ">
           <div className="max-w-xl p-4 md:py-20">
 
-            <h1 className="text-3xl md:text-6xl text-center font-bold leading-tight mb-3 font-heading  md:text-left">
+            <h1 className="text-3xl md:text-6xl font-bold leading-tight mb-3 font-heading">
               FIND CLOTHES 
               THAT MATCH YOUR STYLE
             </h1>

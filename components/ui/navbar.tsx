@@ -92,7 +92,7 @@ export default function Navbar() {
                     </div>
 
                     {/* RIGHT ICONS: CART, SIGNIN */}
-                    <div className="flex items-center ml-10 md:ml-0 gap-10">
+                    <div className="flex items-center ml-8 md:ml-0 gap-8">
                         {/* search icon for mobile */}
                         <div className="md:hidden cursor-pointer" onClick={() => {
                             const q = window.prompt("Search for products:");
