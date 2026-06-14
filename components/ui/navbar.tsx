@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useState } from "react";
 import { X, Search, ShoppingCart, User } from "lucide-react";
 import { Input } from "./input";

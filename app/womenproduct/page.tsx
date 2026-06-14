@@ -60,7 +60,7 @@ export default function Page() {
         <>
         {/* new arrivals section */}
         <section>
-            <h1 className="text-center text-3xl md:text-4xl font-heading mt-5 font-bold uppercase tracking-wider">NEW ARRIVALS</h1>
+            <h1 className="text-center text-3xl md:text-4xl font-heading my-5 font-bold uppercase tracking-wider">NEW ARRIVALS</h1>
             
             {loading ? (
                 <div className="flex justify-center my-10">Loading products...</div>
@@ -84,13 +84,13 @@ export default function Page() {
                 </div>
             )}
 
-            <div className="border-b border-gray-200 max-w-[1240px] mx-auto px-4"></div>
+            <div className="border-b border-gray-200 max-w-[1240px] mt-7 mx-auto px-4"></div>
         </section>
 
 
         {/* TOP SELLING SECTION */}
         <section>
-            <h1 className="text-center text-3xl md:text-4xl font-heading my-10 font-bold uppercase tracking-wider">TOP SELLING</h1>
+            <h1 className="text-center text-3xl md:text-4xl font-heading my-5 font-bold uppercase tracking-wider">TOP SELLING</h1>
             
             {loading ? (
                 <div className="flex justify-center my-20">Loading products...</div>
@@ -113,11 +113,12 @@ export default function Page() {
                     </Button>
                 </div>
             )}
+            <div className="border-b border-gray-200 max-w-[1240px] mt-7 mx-auto px-4"></div>
         </section>
 
 
         {/* BROWSE BY DRESS STYLE SECTION */}
-        <section className="bg-[#F0F0F0] max-w-[1240px] mx-auto mb-10 rounded-[40px] p-8 md:p-16">
+        <section className="bg-[#F0F0F0] max-w-[1240px] mx-auto my-15 rounded-[40px] p-8 md:p-16">
             <h1 className="font-bold text-center font-heading mb-10 text-3xl md:text-5xl uppercase">
                 BROWSE BY DRESS STYLE
             </h1>
@@ -147,8 +148,8 @@ export default function Page() {
             </div>
         </section>
 
-        {/* REVIEWS SECTION */}
-        <Testimonials reviews={reviews} title="OUR HAPPY CUSTOMERS" />
+                {/* REVIEWS SECTION */}
+                    <Testimonials reviews={reviews} title="OUR HAPPY CUSTOMERS" />
         </>
     );
 }

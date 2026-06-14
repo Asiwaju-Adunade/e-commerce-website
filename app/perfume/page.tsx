@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import { getPerfumeProducts, Product } from "@/lib/shopify";
 import { ProductCard } from "@/components/ui/product-card";
@@ -21,7 +20,7 @@ export default function PerfumePage() {
 
   return (
     <div className="max-w-[1240px] mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold text-center">🌸 Perfume Collection</h1>
+      <h1 className="text-3xl font-bold mb-5 text-center">🌸 Perfume Collection</h1>
 
       {loading ? (
         <p>Loading perfumes...</p>

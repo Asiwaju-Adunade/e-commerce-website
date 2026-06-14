@@ -1,5 +1,4 @@
 "use client";
-import Footer from "@/components/ui/footer";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
@@ -120,7 +119,7 @@ export default function Page() {
          </div>
           
           {/* order summary cart items */}
-          <div className="border-gray-200 border space-y-3 w-85 h-96 py-5 p-3 mr-3 md:mr-0 rounded-2xl">
+          <div className="border-gray-200 border space-y-3 w-full md:w-[400px] h-auto py-5 p-3 md:p-5 rounded-2xl">
             {/* summary card */}
              <h1 className="font-bold"> Order Summary</h1>
             <div className="flex justify-between ">
@@ -146,12 +145,12 @@ export default function Page() {
             </div>
 
             {/* button part  */}
-            <div className="flex justify-between   gap-2">
-              <div className="flex bg-gray-100 h-10 p-3 w-80 rounded-full items-center px-2">
+            <div className="flex justify-between gap-2">
+              <div className="flex bg-gray-100 h-10 p-3 w-full rounded-full items-center px-2">
                 <Image src="/icons/labelicon.svg" alt="label icon" width={20} height={20} />
-                <Input type="text" placeholder="Add promo code" className="outline-none border-none" />
+                <Input type="text" placeholder="Add promo code" className="outline-none border-none w-full bg-transparent" />
               </div>
-               <Button className="rounded-full w-30 h-10"> Apply</Button>
+               <Button className="rounded-full px-6 h-10 shrink-0"> Apply</Button>
             </div>
 
             {/* checkout button */}

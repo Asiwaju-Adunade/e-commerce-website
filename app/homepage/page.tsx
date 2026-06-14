@@ -37,14 +37,7 @@ export default function Home() {
         <div className="relative z-10  max-w-[1240px] mx-auto px-6 ">
           <div className="max-w-xl p-4 md:py-20">
 
-            {/* HEADING */}
-            {/* <h1
-              className="text-3xl max-w-[60%] md:text-6xl font-bold leading-tight mb-3 font-heading"
-            >
-              FIND CLOTHES <br /> THAT MATCHES <br /> YOUR STYLE
-            </h1> */}
-
-            <h1 className="text-3xl md:text-6xl font-bold leading-tight mb-3 font-heading text-center md:text-left max-w-3xl">
+            <h1 className="text-3xl md:text-6xl text-center font-bold leading-tight mb-3 font-heading  md:text-left">
               FIND CLOTHES 
               THAT MATCH YOUR STYLE
             </h1>
@@ -116,7 +109,7 @@ export default function Home() {
       </section>
 
       {/*  marquee animation for black designer background */}
-      <section className="bg-black overflow-hidden  w-full">
+      <section className="bg-black overflow-hidden w-full">
         <div className="flex w-max animate-marquee items-center whitespace-nowrap">
           {[...Array(4)].map((_, i) => (
             <Image 
@@ -133,8 +126,8 @@ export default function Home() {
       </section>
 
       {/* Men Products Section */}
-      <section className="max-w-[1240px] mx-auto px-4 md:px-6">
-        <h1 className="text-center text-3xl md:text-4xl font-heading font-bold uppercase tracking-wider">MEN COLLECTION</h1>
+      <section className="max-w-[1240px] mx-auto px-4 my-12 md:px-6">
+        <h1 className="text-center text-3xl md:text-4xl font-heading  mb-5 font-bold uppercase tracking-wider">MEN COLLECTION</h1>
         
         {loading ? (
             <div className="flex justify-center">Loading products...</div>

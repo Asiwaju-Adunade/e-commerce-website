@@ -20,7 +20,7 @@ export default function MakeupPage() {
 
   return (
     <div className="max-w-[1240px] mx-auto px-4 py-10">
-      <h1 className="text-3xl text-center font-bold">💄 Cosmetics Collection</h1>
+      <h1 className="text-3xl text-center  mb-5 font-bold">💄 Cosmetics Collection</h1>
 
       {loading ? (
         <p>Loading makeup...</p>
